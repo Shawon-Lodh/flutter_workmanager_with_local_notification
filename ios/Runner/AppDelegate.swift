@@ -8,6 +8,7 @@ import Flutter
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     GeneratedPluginRegistrant.register(with: self)
+    UIApplication.shared.setMinimumBackgroundFetchInterval(TimeInterval(900)) /* Your Desired Interval for Background Tasks(always in seconds) */
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 }
